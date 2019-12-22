@@ -7,8 +7,8 @@ class Bloc extends Object with Validators {
   //final _password = StreamController<String>.broadcast();
 
   //Subjects are StreamControllers
-  final _email = BehaviourSubject<String>();
-  final _password = BehaviourSubject<String>();
+  final _email = BehaviorSubject<String>();
+  final _password = BehaviorSubject<String>();
 
   //Add data to stream
   Stream<String> get email => _email.stream.transform(validateEmail);
